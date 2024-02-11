@@ -89,6 +89,8 @@ img.me {
   background-color: var(--background-secondary);
 }
 
+/* Media Queries */
+
 @media screen and (min-width: 768px) {
   img.me {
     margin: -1rem 0 0 0;
@@ -145,5 +147,22 @@ img.me {
 @media screen and (min-width: 1280px) {
   h1.me {
     font-size: 4rem;
+  }
+}
+
+/* Animation */
+
+body {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
   }
 }
